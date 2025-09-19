@@ -1,12 +1,8 @@
-# {Project Name} Contributing Guide
-
-> If you need more information about how to fill in this template, read the accompanying [guide](./guide_contributing-guide.md).
->
-> This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text.
+# DeepMode Contributing Guide
 
 ## Welcome
 
-Welcome to the {Project Name} Contributing Guide, and thank you for your interest.
+Welcome to the DeepMode Contributing Guide, and thank you for your interest.
 
 If you would like to contribute to a specific part of the project, check out the following list of contributions that we accept and their corresponding sections that are within this guide:
 
@@ -25,21 +21,13 @@ However, at this time, we do not accept the following contributions:
 * {Contribution type 2}
 * {Contribution type 3}
 
-## {Project Name} overview
+## DeepMode overview
 
-The purpose of the {Project Name} is to {describe your project's objectives or provide an external link to an introductory document, such as the project's README file}.
+The purpose of the DeepMode is to {describe your project's objectives or provide an external link to an introductory document, such as the project's README file}.
 
 ## Ground rules
 
 Before contributing, read our {link to the Code of Conduct} to learn more about our community guidelines and expectations.
-
-## Community engagement
-
-Refer to the following channels to connect with fellow contributors or to stay up-to-date with news about the {Project Name}:
-
-* Join our project contributors on {name and link to online chat}.
-* Participate in our project meetings on {specify the day of the week and cadence} at {specify time and timezone}, where you can provide a status update or raise questions and concerns about your contributions. Use the following link to join: {link to online meeting space}
-* Stay updated on the latest news and changes to the project by signing up to receive our newsletter. Sign up with the following link: {link to the sign-up page for the newsletter}
 
 ## Share ideas
 
@@ -120,7 +108,3 @@ Read our {name and link to your style guide} to understand our guidelines for wr
 ### Text formats
 
 {Provide information on what you need contributors to know and use to edit and create documents.}
-
----
-
-> Explore other templates from [The Good Docs Project](https://thegooddocsproject.dev/). Use our [feedback form](https://thegooddocsproject.dev/feedback/?template=Contributing%20guide) to give feedback on this template.
