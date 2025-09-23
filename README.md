@@ -1,151 +1,55 @@
-# README template
+# DeepMode ⚡
 
-> If you need more information about how to fill in this template, read the accompanying [guide](./guide_readme.md).
->
-> This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text.
+## Project description 📖
 
-## {Project} logo and badges
+DeepMode is a prototype project that tackles the modern challenge of focus in a world full of stress, distractions, and pressure.  
+It fosters mindfulness and self-reflection 🌱, helps users manage daily stress 🧘, and empowers them to concentrate on what truly matters 🎯.  
+Currently in the validation and iteration phase 🔧, DeepMode is building Prototype 2.0, running first pilot tests 👥, and integrating expert perspectives 🧑‍⚕️ to refine its positioning.  
 
-{This section is optional. Embed an image of the project logo and include links to relevant badges in the README.}
+## Who this project is for 👥
 
-## {Project Name}
+This project is intended for people who experience stress, distractions, or difficulties with focus.  
+We are currently in the process of refining and defining the exact target group through research and pilot testing 🔍.  
 
-{Include the project URL and project owner name underneath the project name if applicable.}
+## Project dependencies 🛠️
 
-## Table of contents
+Before using DeepMode, ensure you have:  
 
-{This section is optional.}
+* An Arduino or ESP32 board ⚡  
+* A USB cable to connect the board 🔌  
+* [Arduino IDE](https://www.arduino.cc/en/software) (desktop) 💻 or [Arduino Web Editor](https://create.arduino.cc/editor) 🌐  
+* The required 3D-printed parts 🖨️ (see `/3d-files` folder for STL and Blender files)  
 
-1. Heading 1
+## Instructions for using DeepMode 🚀
 
-2. Heading 2
+At this stage, DeepMode does not yet include a full onboarding process.  
+The project can already be installed and tried out in its current prototype state, and we actively welcome feedback 💬.  
 
-3. Heading 3...
+Feedback can currently be shared via Slack directly with one of the [team members](./OUR-TEAM.md).  
 
-## Project description
+A detailed installation guide is available in [`INSTALLATION.md`](./INSTALLATION.md).  
 
-{The README template guide includes information on how to write a project description and a project description. Here are some examples of effective phrases for describing a project.}
+## Troubleshooting 🐞
 
-With _{Project Name}_ you can _{verb}_ _{noun}_...
+If you encounter problems, please check the [installation guide](./INSTALLATION.md) for tips and troubleshooting steps.  
+You can also reach out via Slack to a [team member](./OUR-TEAM.md).  
 
-_{Project Name}_ helps you _{verb}_ _{noun}_...
+## Contributing guidelines 🤝
 
-Unlike _{alternative}_, _{Project Name}_ _{verb}_ _{noun}_...
+We welcome contributions of all kinds — from testing 🧪 and design 🎨 to development and documentation 📚.  
+Please get in touch with the team via Slack before starting to contribute.  
 
-{Include screenshots and/or demo videos if applicable}
+## Additional documentation 📑
 
-## Who this project is for
+* [Installation Guide](./INSTALLATION.md)  
+* [Our Team](./OUR-TEAM.md)  
 
-This project is intended for {target user} who wants to {user objective}.
+## How to get help 🆘
 
-## Project dependencies
+For support, questions, or feedback, please contact the [DeepMode team](./OUR-TEAM.md) via Slack.  
 
-Before using {Project Name}, ensure you have:
+## Terms of use 📜
 
-* Prerequisite 1
-* Prerequisite 2
-* Prerequisite 3...
-
-## Instructions for using {Project Name}
-
-Get started with {Project Name} by {write the first step a user needs to start using the project. Use a verb to start.}.
-
-### Install {Project Name}
-
-1. {Write the step here.}
-
-    {Explanatory text here}
-
-    {Optional: Include a code sample or screenshot that helps your users complete this step}
-
-2. {Write the step here.}
-
-    a. {Substep 1}
-
-    b. {Substep 2}
-
-### Configure {Project Name}
-
-1. {Write the step here.}
-2. {Write the step here.}
-
-### Run {Project Name}
-
-1. {Write the step here.}
-2. {Write the step here.}
-
-### Troubleshoot {Project Name}
-
-1. {Write the step here.}
-2. {Write the step here.}
-
-<table>
-  <tr>
-   <td>
-    Issue
-   </td>
-   <td>
-    Solution
-   </td>
-  </tr>
-  <tr>
-   <td>
-    {Describe the issue here}
-   </td>
-   <td>
-    {Write solution here}
-   </td>
-  </tr>
-  <tr>
-   <td>
-    {Describe the issue here}
-   </td>
-   <td>
-    {Write solution here}
-   </td>
-  </tr>
-  <tr>
-   <td>
-    {Describe the issue here}
-   </td>
-   <td>
-    {Write solution here}
-   </td>
-  </tr>
-</table>
-
-Other troubleshooting supports:
-
-* {Link to FAQs}
-* {Link to runbooks}
-* {Link to other relevant support information}
-
-## Contributing guidelines
-
-{Include a link to your contributing guide here. If you do not have a contributing guide, incorporate the information in the README.}
-
-## Additional documentation
-
-{Include links and brief descriptions to additional documentation. Examples provided in README template guide.}
-
-For more information:
-
-* Reference link 1
-* Reference link 2
-* Reference link 3...
-
-## How to get help
-
-{Include links and brief descriptions for support resources. Examples provided in README template guide.}
-
-* Reference link 1
-* Reference link 2
-* Reference link 3...
-
-## Terms of use
-
-{Project Name} is licensed under {link to license file}.
+DeepMode is licensed under the [MIT License](./LICENSE).  
 
 ---
-
-> Explore other templates from [The Good Docs Project](https://thegooddocsproject.dev/). Use our [feedback form](https://thegooddocsproject.dev/feedback/?template=Readme%20template) to give feedback on this template.
