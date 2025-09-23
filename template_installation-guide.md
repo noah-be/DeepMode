@@ -1,192 +1,83 @@
-# Title
+# Installation Guide for DeepMode ⚡
 
-> If you need more information about how to fill in this template, read the accompanying [guide](./guide_installation-guide.md).
->
-> This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text.
+## Introduction 📖
 
-## Introduction
+This guide explains how to upload and run the DeepMode project on your hardware.  
+The project consists of a single `.ino` file that contains the entire source code.  
+DeepMode itself runs on the hardware (Arduino/ESP32), but it is installed **via a computer** using the Arduino IDE (desktop or web version).
 
-{The installation guide template includes information on writing procedures for successfully installing {product name}. {Insert your preferred description of the installation process.}
+## Installation types 💻
 
-{Optional: Add a demo GIF that shows what the installed project would look like or link to a sandbox or playground to test out the product and explore its features.}
-
-## Installation types
-
-This guide explains the steps and instructions required to install {product name} on supported operating systems. It also explains how to configure, start, and uninstall {product name}}.
-
-{Include a table to capture the different installation types, such as:
-
-* Supported operating systems
-* The type of product installed (if provided in different versions, such as Main and Lite version)
-* Cloud providers, such as CodeSpaces, CodeSandBox, GitPod, etc.,) including a link to the right heading for all options.}
+DeepMode can be installed onto your hardware using a computer with the Arduino IDE or the Arduino Web Editor.
 
 | **Type** | **Description** | **More information** |
-| --------- | ----------------- | -------------------  |
-| {Name of installation type}   | {Description of installation type} | {Link to the relevant installation steps section}                   |
-| {Name of installation type}   | {Description of installation type} | {Link to the relevant installation steps section}                                       |
+| -------- | ---------------- | ------------------- |
+| Arduino IDE (Windows, macOS, Linux) | Use the Arduino IDE (desktop app) to compile and upload the `.ino` sketch to your hardware | [Installation steps](#installation-steps) |
+| Arduino Web Editor 🌐 | Use the [Arduino Web Editor](https://create.arduino.cc/editor) to compile and upload the `.ino` sketch directly from your browser | [Installation steps](#installation-steps) |
 
-## Overview
+## System requirements 🛠️
 
-{This section is optional.}
+- A computer with Windows, macOS, or Linux 🖥️ (used only to install DeepMode onto the board)  
+- Either:  
+  - [Arduino IDE](https://www.arduino.cc/en/software) installed (latest version recommended) 💾  
+  - Or access to the [Arduino Web Editor](https://create.arduino.cc/editor) 🌐  
+- Supported hardware (Arduino or ESP32 board) 🔌  
+- USB cable to connect the board to your computer 🔗  
 
-{Add a list of the available project versions, link to the installation guide for that version, and highlight the latest, beta, or stable version as listed in the following table:}
+## Before you begin ✅
 
-| **Version** | **Build** | **Release Date** | **Status**                               |
-| --------    | --------- | -------- | ------- |
-| [V {versionNumber}](#link) | {versionNumber release} | {dd/mm/yyyy}      | {Latest}        |
-| [V {versionNumber}](#link) | {versionNumber release} | {dd/mm/yyyy}      | {Beta}          |
-| [V {versionNumber}](#link) | {versionNumber release} | {dd/mm/yyyy}      | {Stable}        |
+Make sure you have:  
 
-{Explain the intended result of the installation, such as the commands, command aliases, major flags, available plugins, files downloaded, or application programs.}
+* Installed the Arduino IDE 💻 **or** signed in to the Arduino Web Editor 🌐  
+* Connected your board via USB 🔌  
+* Installed the correct board support package (Arduino AVR Boards, ESP32, etc.) 📦  
 
-{Add a sequential end-to-end summary of the installation process that can serve as a quick link or reference section for users as listed in the following table:}
+## Installation steps 🚀
 
-|      | **Process** | **More information** |
-| ---- | ------------ | -------------------- |
-| 1. | Before installing, check the system requirements to ensure your computer is supported in the latest version of {product name}. | {Link to relevant documents}        |
-| 2. | Check the system prerequisites to install all the required {software,  dependencies, tools.}.   | {Link to relevant documents}                          |
-| 3. | {List additional steps.}          | {Link to relevant documents}                                    |
-| 4. | Verify that the installation was successful. | {Link to relevant documents} |
+### Option A – Desktop IDE 💾
 
-## System requirements
+1. **Install Arduino IDE**  
+   Download and install the [Arduino IDE](https://www.arduino.cc/en/software) for your operating system.  
+2. **Open the project file**  
+   Open the `.ino` file included in this repository with the Arduino IDE 📂.  
+3. **Select your board and port**  
+   Go to **Tools → Board** and choose your board (e.g., Arduino Uno or ESP32).  
+   Also select the correct **Port** 🎛️.  
+4. **Compile the code**  
+   Click the ✅ (check mark) button in the Arduino IDE to verify/compile the sketch ⚙️.  
+5. **Upload to your hardware**  
+   Click the → (right arrow) button to upload the sketch ⬆️.  
 
-{Start by breaking this into sub-sections based on the number of installation types (product type, operating system, or cloud-especially for projects that require self-hosting to work). Based on your use case, you can use this section reversely by having the installation type as the heading and system requirements for that type as a sub-section.}
+### Option B – Web Editor 🌐
 
-{Mention for all installation types.}
+1. **Sign in to the [Arduino Web Editor](https://create.arduino.cc/editor)**.  
+2. **Upload the `.ino` file** to your workspace 📂.  
+3. **Select your board and port** from the toolbar 🎛️.  
+4. **Click "Verify"** to compile the sketch ⚙️.  
+5. **Click "Upload"** to flash the program to your board ⬆️.  
 
-## Before you begin
+## Verify installation 🔍
 
-{List and highlight all the required prerequisites here. Consider making this a table.}
+- The Arduino IDE or Web Editor should display **"Done uploading"**.  
+- Your hardware (Arduino/ESP32 board) should now automatically run the DeepMode program 🎉.  
 
-Before installing {version number}, ensure you have:
+## Uninstallation options 🗑️
 
-* {Prerequisite one}
-* {Prerequisite two}
-* {Prerequisite three}
+To remove DeepMode, simply upload a blank sketch or another program to the board.
 
-{Include prerequisites for all installation types.}
+## Troubleshooting 🐞
 
-| **Type** | **Prerequisites** | **Note(s)** |
-| --------- | ----------------- | ------------ |
-| {Installation type name} | {Installation type prerequisites} | {Important considerations}          |
-| {Installation type name} | {Installation type prerequisites} | {Important considerations}          |
+### Problem: Board not detected  
+- **Cause**: Missing driver or wrong USB cable.  
+- **Solution**: Install the necessary USB drivers for your board and make sure you are using a data-capable USB cable.  
 
-## Installation steps
+### Problem: Compilation error  
+- **Cause**: Missing board support package.  
+- **Solution**: Install the correct board package via **Tools → Board → Board Manager** (desktop IDE) or via the Web Editor settings.  
 
-The following procedure explains how to install {installation type name} and {optional version number}.
+## Next steps 🎯
 
-{Provide a short introduction to the step-by-step procedure based on the installation type.}
-
-Get started with {version number} by {write the first step a user needs to start the installation. Use a verb to start.}
-
-### Step 1 - One-sentence description of the step
-
-{Optionally, introduce this section with brief explanatory text.}
-
-{Continue with a list section if these steps include a sequence of instructions}
-
-{Optional: include a code snippet or relevant screenshot that helps your users complete the steps.}
-
-{Optional: show the result of completing this step, such as a text output or an image).}
-
-#### 1.1. Substep 1 - One-sentence description of the step
-
-{Optionally, introduce this section with brief explanatory text.}
-
-{Continue with a list section if these steps include a sequence of instructions}
-
-#### 1.2. Substep 2 - One-sentence description of the step
-
-{Optionally, introduce this section with brief explanatory text.}
-
-{Continue with a list section if these steps include a sequence of instructions.}
-
-### Step 2 - One-sentence description of the step
-
-{Optionally, introduce this section with brief explanatory text.}
-
-{Continue with a list section if these steps include a sequence of instructions.}
-
-## Verify installation
-
-{Include test commands, intended outputs, or other steps to confirm the installation was successful.}
-
-## Post installation
-
-{Provide an overview of options or link to other relevant documentation once installation has been completed. Also, account for anticipated problems during or after installation.}
-
-{Optinal: include short introduction text.}
-
-### Configuration options
-
-{Provide information regarding post-installation configuration options.}
-
-{Describe the requirements for configuring the installed product.}
-
-{Link to relevant documentation if needed.}
-
-### Upgrade options
-
-{Provide information regarding upgrade options, also known as an update options.}
-
-{Describe how to install updates from a range of possible options.}
-
-{Provide a link to available updates with specific version numbers, release dates, and key features.}
-
-Example: To begin the system updates:
-
-1. Choose the version number.
-2. Download the update at [link](http://example.com).
-3. Double-click the update file.
-4. Additional steps as needed.
-
-### Downgrade options
-
-{Provide information regarding downgrading the version installed.}
-
-### Uninstallation options
-
-{Provide information regarding uninstalling the product, software, SDK, package, library, framework installed.}
-
-## Troubleshooting
-
-{This section helps solve problems encountered during installation. Start with a problem statement, then indicate the cause(s) and provide a solution. Additional information can be added (e.g., restart the computer)}.
-
-{Add a warning note and highlight in color if the action has the potential to affect security.
-
-Communicating with the product engineers and programmers is essential to keep this section up-to-date.}
-
-### {Problem title: ...}
-
-{Optional: More details about the **problem**.}
-
-{Optional: More details about the **cause(s)** of the problem.}
-
-**Solution**: {Solution to the problem...}
-
-**Contact**: {Support/contact information for issue reports and feedback...}
-
-### {Problem title: ...}
-
-...
-
-## Next steps
-
-{Include what to do after a successful installation, such as a recommended next step or links to further recommended documentation.}
-
-## Product version history
-
-{History section with major changes to the installation guide tabulated following the Major.Minor.Patch semantic versioning specification.}
-
-## Definition of terms
-
-{Optional: Provide a glossary table describing the terms, acronyms, and abbreviations used in the installation guide.}
-
-| **Term** | **Meaning** |
-| ------------------------------------- | ------------ |
-| {Term, acronym, or abbreviation}  | {Provide a definition of the term or acronym or abbreviation used in this guide.}     |
-| {Term, acronym, or abbreviation}  | {Provide a definition of the term or acronym or abbreviation used in this guide.}     |
+After a successful installation, you can start customizing the `.ino` file to fit your project needs.  
+For collaboration, please refer to our contribution guide (if available).
 
 ---
-
-> Explore other templates from [The Good Docs Project](https://thegooddocsproject.dev/). Use our [feedback form](https://thegooddocsproject.dev/feedback/?template=Installation%20guide) to give feedback on this template.
