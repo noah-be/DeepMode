@@ -6,6 +6,31 @@ DeepMode is a prototype project that tackles the modern challenge of focus in a 
 It fosters mindfulness and self-reflection 🌱, helps users manage daily stress 🧘, and empowers them to concentrate on what truly matters 🎯.  
 Currently in the validation and iteration phase 🔧, DeepMode is building Prototype 2.0, running first pilot tests 👥, and integrating expert perspectives 🧑‍⚕️ to refine its positioning.  
 
+### System Overview 🖼️
+
+Below you can see a simple overview of the current prototype hardware:  
+
+```mermaid
+flowchart TB
+    user([User])
+
+    subgraph device["DeepMode Device (Hardware)"]
+        esp32[ESP32 Microcontroller]
+        btnL[Button Left]
+        btnR[Button Right]
+        oled[OLED Display (I²C)]
+        battery[Battery / USB Power]
+    end
+
+    user -->|press| btnL
+    user -->|press| btnR
+
+    btnL --> esp32
+    btnR --> esp32
+    oled <-->|SDA/SCL| esp32
+    battery --> esp32
+    battery --> oled
+
 ## Who this project is for 👥
 
 This project is intended for people who experience stress, distractions, or difficulties with focus.  
