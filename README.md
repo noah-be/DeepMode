@@ -8,17 +8,18 @@ Currently in the validation and iteration phase 🔧, DeepMode is building Proto
 
 ### System Overview 🖼️
 
-Below you can see a simple overview of the current prototype hardware:  
+![DeepMode Prototype](docs/images/prototype.png)
+*Prototype 2.0 with OLED display, two buttons and USB power*
 
 ```mermaid
 flowchart TB
     user([User])
 
-    subgraph device["DeepMode Device (Hardware)"]
+    subgraph device["Hardware block diagram"]
         esp32[ESP32 Microcontroller]
-        btnL[Button Left]
-        btnR[Button Right]
-        oled[OLED Display (I²C)]
+        btnL[Left Button]
+        btnR[Right Button]
+        oled[Display]
         battery[Battery / USB Power]
     end
 
@@ -30,6 +31,8 @@ flowchart TB
     oled <-->|SDA/SCL| esp32
     battery --> esp32
     battery --> oled
+```
+
 
 ## Who this project is for 👥
 
